@@ -1,0 +1,25 @@
+// ./moorslizecss/modules/_init.scss
+// INITIALISATEUR
+
+// -------------------------------------------------------------------
+// VARIBALES
+// -------------------------------------------------------------------
+
+
+// CONTAINER
+$screen-sizes: (
+    'xs': ('breakpoint': 0,     'container-size':90%),
+    's' : ('breakpoint':576px,  'container-size':85%),
+    'm' : ('breakpoint':768px,  'container-size':85%),
+    'l' : ('breakpoint':960px,  'container-size':80%),
+    'xl': ('breakpoint':1200px, 'container-size':70%),
+);
+
+
+// -------------------------------------------------------------------
+// CODE
+// -------------------------------------------------------------------
+
+*{
+    box-sizing: border-box;
+}
