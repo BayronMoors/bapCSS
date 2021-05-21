@@ -1,0 +1,94 @@
+// ./modules/list
+
+// -------------------------------------------------------------------
+// LIST VARIBALES
+// -------------------------------------------------------------------
+$margin-list:1em 0;
+
+
+$padding-list: 20px;
+$margin-list--li: .5em 0;
+
+
+$padding-list-alternate: 20px;
+$margin-list-alternate--li: .5em 0;
+
+
+$padding-list-ordonee: 20px;
+$margin-list-ordonee--li: .5em 0;
+
+
+$padding-list-icon: 0;
+$margin-list-list-icon--li: 0 .5em ;
+$list-style-list-icon: none;
+$display-list-icon: flex;
+$flex-direction-list-icon:row;
+
+$padding-list-nav: 0;
+$margin-list-list-nav--li: 0 .5em ;
+$list-style-list-nav: none;
+$display-list-nav: flex;
+$flex-direction-list-nav:row;
+$list-style-list-nav: none;
+$padding-list-nav: 0;
+
+$margin-left-list-nav-text-definition: 2em;
+
+// -------------------------------------------------------------------
+// LIST VARIBALES
+// -------------------------------------------------------------------
+
+.list{
+    padding-left: $padding-list;
+    margin: $margin-list;
+    li{
+        margin: $margin-list--li;
+    }
+}
+
+.list-alternate{
+    padding-left: $padding-list-alternate;
+    margin: $margin-list;
+    li{
+        margin: $margin-list-alternate--li;
+    }
+}
+
+.list-ordonee{
+    padding-left: $padding-list-ordonee;
+    margin: $margin-list;
+    li{
+        margin: $margin-list-ordonee--li;
+    }
+}
+
+.list-icon{
+    display: $display-list-icon;
+    flex-direction: $flex-direction-list-icon;
+    padding-left: $padding-list-icon;
+    margin: $margin-list;
+    list-style: $list-style-list-icon;
+    li{
+        margin: $margin-list-list-icon--li;
+    }
+}
+
+.list-nav{
+    display: $display-list-nav;
+    flex-direction: $flex-direction-list-nav;
+    padding-left: $padding-list-nav;
+    list-style: $list-style-list-nav;
+    li{
+        margin: $margin-list-list-nav--li;
+    }
+}
+
+.list-definition{
+
+    list-style: $list-style-list-nav;
+    padding: $padding-list-nav;
+    margin: $margin-list;
+    .text-definition{
+        margin-left: $margin-left-list-nav-text-definition;
+    }
+}

@@ -1,9 +1,9 @@
 # bapCSS
-## Version 0.0.2b
+## Version 0.0.3b
 
 ### Classes name
 
-BOXES
+#### BOXES
 
 .container
 
@@ -13,7 +13,7 @@ BOXES
     - l:  >960px:  80%
     - xl: >1200px: 70%
 
-GRID
+#### GRID
 
 .grid
 
@@ -32,4 +32,101 @@ GRID
     - .col-off-0 to .col-off-11
     - .row-off-0 to .row-off-11
 
+#### HIDE
+    - Hide-from
+        - .hide-from-s to .hide-from-xl
+    - Hide until
+        - .hide-until-s to .hide-until-xl
 
+
+#### CONTENT ALIGN
+
+    - .text-center
+    - .text-left
+    - .text-right
+    - .text-justify
+
+#### COLOR BLOCK
+
+    - .color-block
+        - .color-hover
+        - .color-light
+        - .color-text
+        - .colorNeutral1
+        - .colorNeutral2
+        - .colorNeutral3
+        - .colorNeutral4
+
+
+#### DISPLAY
+    - .dBlock
+    - .dInBlock
+    - .dFlex
+        - WRAP
+            - .wrap
+            - .wrapRev
+        - ALIGNEMENTS
+            - JUSTIFY
+                - .j-center
+                - .j-start
+                - .j-end
+                - .j-space-between
+                - .j-space-around
+                - .j-space-evenly
+            - ALIGN
+                - .a-center
+                - .a-star
+                - .a-end
+                - .a-space-between
+                - .a-space-around
+                - .a-space-evenly
+            - DIRECTION
+                - .flexRow
+                - .flexRowRev
+                - .flexColumn
+                - .flexColumnRev
+
+#### MARGIN
+    -.margin-t
+    -.margin-r
+    -.margin-b
+    -.margin-l
+
+#### TITLE
+    - .h1
+    - .h2
+    - .h3
+    - .h4
+    - .h5
+    - .h6
+    - .main-title
+
+#### HR
+    - .hr
+
+#### HEADING SUBTITLE
+    - .heading-subtitle
+        - .title-l
+        - .title-m
+        - .title-s
+        - .subtitle-l
+        - .subtitle-m
+        - .subtitle-s
+
+#### NAV
+    - .nav
+        - .nav-link
+
+#### LIST
+    - .list
+    - .list-alternate
+    - .list-ordonee
+    - .list-icon
+    - .list.nav
+    - .list-definition
+
+#### POSITION
+    - .post-relative
+    - .post-absolute
+    - .post-fixed
+    - .post-sticky

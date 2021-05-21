@@ -3,10 +3,46 @@
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
-//  VARIABLES
+//  COLOR VARIABLES
 // -------------------------------------------------------------------
-$color3: #717981;
-$color4: #4e403d;
+$colorNeutral2: #4e403d;
+$colorNeutral1: #717981;
+$colorNeutral3: #EEEEEE;
+$colorNeutral4: #71798159;
 $colorHover: #18bfef;
 $colorLight: #f6f6f6;
-$colorTitle: #212931;
+$colorText: #212931;
+
+$color-block-color:#FFF;
+$color-block-dim:95px;
+$color-block-margin: 3px;
+
+// -------------------------------------------------------------------
+//  COLOR BLOCKS
+// -------------------------------------------------------------------
+.color-block {
+    width: $color-block-dim;
+    height: $color-block-dim;
+    color: $color-block-color;
+
+    &:not(:last-of-type){
+        margin-right: $color-block-margin;
+    }
+    
+    &.color-hover{
+        background: $colorHover;
+    }
+
+    &.color-light{
+        background: $colorLight;
+    }
+    &.color-text{
+        background: $colorNeutral1;
+    }
+    &.color-4{
+        background: $colorNeutral2;
+    }
+    &.color-title{
+        background: $colorText;
+    }
+}
