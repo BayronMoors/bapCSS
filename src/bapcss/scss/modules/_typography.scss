@@ -81,12 +81,14 @@ $radius-code: 2px;
 $font-size-icon: 1.2rem;
 $color-hover-icon: $colorHover;
 $border-icon-border: 2px solid $colorNeutral3;
+$border-icon-border-hover: 2px solid $colorHover;
 $border-radius-icon-border: 50%;
 $display-icon: flex;
 $size-icon: 40px;
 $justify-content-icon: center;
 $align-items-icon: center;
 $text-decoration-icon: none;
+
 
 // HR
 $hr-border: 1px solid $colorNeutral3;
@@ -216,6 +218,9 @@ code {
   }
   &:hover {
     color: $color-hover-icon;
+    &.border{
+      border: $border-icon-border-hover;
+    }
   }
 }
 

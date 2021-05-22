@@ -22,6 +22,12 @@ $column-gap: 0;
     grid-column: span 12;
     grid-row: span 1;
   }
+
+  @for $i from 1 to 6 {
+    &.gap-#{$i} {
+      gap: $i +rem;
+    }
+  }
 }
 
 @each $size, $values in $screen-sizes {
