@@ -10,6 +10,8 @@
 $font-1: "Merriweather", serif;
 $font-color-default: $colorText;
 $font-size-default: 1.1em;
+$font-size-medium: 1em;
+$font-size-small: 0.7em;
 $font-weight-default: 400;
 $line-height-default: 1.65;
 
@@ -77,18 +79,30 @@ $padding-code: 0.2em 0.5em;
 $border-code: $colorNeutral3 2px solid;
 $radius-code: 2px;
 
+// PRE
+$display-pre: block;
+$color-pre: $colorText;
+$background-pre: $colorLight;
+$text-align-pre: left;
+$font-size-pre: 0.8rem;
+$font-weight-pre: 200;
+$padding-pre: 1rem;
+$border-pre: $colorNeutral3 2px solid;
+$overflow-pre: hidden;
+
 //icon
-$font-size-icon: 1.2rem;
+$font-size-icon-small: 1rem;
+$font-size-icon-default: 1.2rem;
 $color-hover-icon: $colorHover;
 $border-icon-border: 2px solid $colorNeutral3;
 $border-icon-border-hover: 2px solid $colorHover;
 $border-radius-icon-border: 50%;
 $display-icon: flex;
-$size-icon: 40px;
+$size-icon-small: 30px;
+$size-icon-default: 40px;
 $justify-content-icon: center;
 $align-items-icon: center;
 $text-decoration-icon: none;
-
 
 // HR
 $hr-border: 1px solid $colorNeutral3;
@@ -101,8 +115,16 @@ $hr-marge: 2em 0;
 // -------------------------------------------------------------------
 
 body {
+    font-size: $font-size-small;
+  
+  @media screen and (min-width: map-get($screen-sizes, "m", "breakpoint")) {
+    font-size: $font-size-medium;
+  }
+  @media screen and (min-width: map-get($screen-sizes, "l", "breakpoint")) {
+    font-size: $font-size-default;
+  }
+  
   font-family: $font-1;
-  font-size: $font-size-default;
   font-weight: $font-weight-default;
   line-height: $line-height-default;
   color: $font-color-default;
@@ -202,13 +224,32 @@ code {
   border-radius: $radius-code;
 }
 
+// pre
+
+pre {
+  display: $display-pre;
+  color: $color-pre;
+  background: $background-pre;
+  text-align: $text-align-pre;
+  font-size: $font-size-pre;
+  font-weight: $font-weight-pre;
+  padding: $padding-pre;
+  border: $border-pre;
+  overflow: $overflow-pre;
+}
+
 //ICON
 
 .icon {
-  font-size: $font-size-icon;
+  font-size: $font-size-icon-small;
+  height: $size-icon-small;
+  width: $size-icon-small;
+  @media screen and (min-width: map-get($screen-sizes, "m", "breakpoint")) {
+    font-size: $font-size-icon-default;
+    height: $size-icon-default;
+    width: $size-icon-default;
+  }
   display: $display-icon;
-  height: $size-icon;
-  width: $size-icon;
   justify-content: $justify-content-icon;
   align-items: $align-items-icon;
   text-decoration: $text-decoration-icon;
@@ -218,7 +259,7 @@ code {
   }
   &:hover {
     color: $color-hover-icon;
-    &.border{
+    &.border {
       border: $border-icon-border-hover;
     }
   }

@@ -46,3 +46,27 @@ $color-block-margin: 3px;
         background: $colorText;
     }
 }
+
+.text-color-light{
+    color: $colorLight;
+}
+
+.text-color-hover{
+    color: $colorHover;
+}
+
+.text-color-text{
+    color: $colorText;
+}
+
+.text-color-neutral-1{
+    color: $colorNeutral1;
+}
+
+.text-color-neutral-2{
+    color: $colorNeutral2;
+}
+
+.text-color-neutral-3{
+    color: $colorNeutral3;
+}

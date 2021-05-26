@@ -136,3 +136,35 @@ $margin-right-list-actions-item-block:.5rem;
     text-align: $text-align-list-actions-item-inline;
   }
 }
+
+.list-page{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 6rem;
+  li{
+    padding: 0;
+    margin: 0;
+    &:first-of-type a{
+      border-left: 3px solid $colorNeutral3;
+    }
+    a{
+      display: block;
+      padding: .4rem .8rem;
+      @media screen and (min-width: map-get($screen-sizes, 'm' , 'breakpoint')){
+        padding: .6rem 1rem;
+      }
+      margin: 0;
+      text-decoration: none;
+      &:hover{
+        background: $colorNeutral3;
+      }
+
+
+      border-right: 3px solid $colorNeutral3;
+      border-top: 3px solid $colorNeutral3;
+      border-bottom: 3px solid $colorNeutral3;
+    }
+  }
+
+}

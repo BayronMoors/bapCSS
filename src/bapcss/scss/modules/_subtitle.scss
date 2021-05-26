@@ -9,22 +9,22 @@
     $font-size-title-s: $font-size-h5;
 
     $font-size-subtitle-l: 1rem;
-    $font-style-subtitle-l: oblique;
+    $font-style-subtitle-l: italic;
     $margin-subtitle-l: 0 0 3em 0;
 
     $font-size-subtitle-m: .85rem;
-    $font-style-subtitle-m: oblique;
+    $font-style-subtitle-m: italic;
     $margin-subtitle-m: 0 0 3em 0;
     
     $font-size-subtitle-s: .7rem;
-    $font-style-subtitle-s: oblique;
+    $font-style-subtitle-s: italic;
     $margin-subtitle-s: 0 0 3em 0;
 
 // -------------------------------------------------------------------
 // SUBTITLE VARIBALES
 // -------------------------------------------------------------------
 
-.heading-subtitle {
+
   .title-l {
       font-size: $font-size-title-l;
   }
@@ -54,4 +54,4 @@
     font-style: $font-style-subtitle-s;
     margin: $margin-subtitle-s;
   }
-}
+

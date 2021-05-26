@@ -42,6 +42,7 @@ $padding-btn-light: 0.9rem 2rem;
 $text-transform-btn-light: uppercase;
 $border-btn-light: 3px solid $colorText;
 $color-btn-light: $colorText;
+$background-btn-light: none;
 $margin-right-btn-light: 1.5rem;
 $margin-bottom-btn-light: 1.5rem;
 
@@ -122,6 +123,7 @@ $opacity-btn-light--disabled: 0.5;
     text-transform: $text-transform-btn-light;
     padding: $padding-btn-light;
     border: $border-btn-light;
+    background: $background-btn-light;
     color: $color-btn-light;
     margin-right: $margin-right-btn-light;
     margin-bottom: $margin-bottom-btn-light;
