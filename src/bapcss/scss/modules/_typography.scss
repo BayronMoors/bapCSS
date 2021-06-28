@@ -105,7 +105,7 @@ $align-items-icon: center;
 $text-decoration-icon: none;
 
 // HR
-$hr-border: 1px solid $colorNeutral3;
+$hr-border-top: 2px solid $colorNeutral3;
 $hr-marge: 2em 0;
 
 // HELPERS
@@ -267,7 +267,7 @@ pre {
 
 // HR
 
-.hr {
-  border: $hr-border;
+hr, .hr {
+  border-top: $hr-border-top;
   margin: $hr-marge;
 }
