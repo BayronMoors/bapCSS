@@ -79,32 +79,11 @@
                 - .a-center
                 - .a-star
                 - .a-end
-                - .a-space-between
-                - .a-space-around
-                - .a-space-evenly
             - DIRECTION
                 - .flexRow
                 - .flexRowRev
                 - .flexColumn
                 - .flexColumnRev
-
-#### MARGIN
-    -.margin-t
-    -.margin-r
-    -.margin-b
-    -.margin-l
-
-#### TITLE
-    - .h1
-    - .h2
-    - .h3
-    - .h4
-    - .h5
-    - .h6
-    - .main-title
-
-#### HR
-    - .hr
 
 #### HEADING SUBTITLE
     - .heading-subtitle
@@ -115,32 +94,11 @@
         - .subtitle-m
         - .subtitle-s
 
-#### NAV
-    - .nav
-        - .nav-link
-
-#### LIST
-    - .list
-    - .list-alternate
-    - .list-ordonee
-    - .list-icon
-    - .list.nav
-    - .list-definition
-    - .list-action
-        - .item-inline
-        - .item-inlineBlock
-        - .item-block
-
-#### POSITION
-    - .post-relative
-    - .post-absolute
-    - .post-fixed
-    - .post-sticky
-
 #### BUTTON
 
     - .btn
-    - .btn-light
+        - .primary
+        - .secondary
         - .small
         - .fit
         - .disabled
